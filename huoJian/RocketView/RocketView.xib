@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RocketView">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="524"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="m5x-9w-yDd">
+                    <rect key="frame" x="199" y="69" width="70" height="180"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hj0001.png" id="ank-J8-nah" customClass="YYAnimatedImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="120"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="火0001.png" id="0KY-B1-YgQ" customClass="YYAnimatedImageView">
+                            <rect key="frame" x="0.0" y="79" width="70" height="101"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="oc0-LJ-lgv">
+                    <rect key="frame" x="99" y="313" width="230" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="云.png" id="C6N-DQ-niJ">
+                            <rect key="frame" x="0.0" y="9" width="120" height="70"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="云.png" id="Wwa-28-JlX">
+                            <rect key="frame" x="115" y="0.0" width="70" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="云.png" id="X84-K8-Z6w">
+                            <rect key="frame" x="130" y="40" width="100" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cloud1" destination="C6N-DQ-niJ" id="9rV-xZ-G6Z"/>
+                <outlet property="cloud2" destination="X84-K8-Z6w" id="PvG-m1-bBP"/>
+                <outlet property="cloud3" destination="Wwa-28-JlX" id="jao-Zc-P79"/>
+                <outlet property="cloudBigView" destination="oc0-LJ-lgv" id="ryh-Pg-wBj"/>
+                <outlet property="fireImageView" destination="0KY-B1-YgQ" id="W0l-J2-kHO"/>
+                <outlet property="rocketBigView" destination="m5x-9w-yDd" id="KPo-ky-HE2"/>
+                <outlet property="rocketImageView" destination="ank-J8-nah" id="b98-8M-dCZ"/>
+            </connections>
+            <point key="canvasLocation" x="291" y="257"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hj0001.png" width="246" height="426"/>
+        <image name="云.png" width="414" height="237"/>
+        <image name="火0001.png" width="246" height="377"/>
+    </resources>
+</document>
