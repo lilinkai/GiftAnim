@@ -53,8 +53,6 @@
 		A61E75E71D5C548D005FF116 /* lateral_rocket_2.png in Resources */ = {isa = PBXBuildFile; fileRef = A61E75DF1D5C548D005FF116 /* lateral_rocket_2.png */; };
 		A61E75E81D5C548D005FF116 /* lateral_rocket_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A61E75E01D5C548D005FF116 /* lateral_rocket_3.png */; };
 		A61E75E91D5C548D005FF116 /* lateral_rocket_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = A61E75E11D5C548D005FF116 /* lateral_rocket_bk.png */; };
-		A61E75EC1D5C57C6005FF116 /* GiftGlobalView.m in Sources */ = {isa = PBXBuildFile; fileRef = A61E75EB1D5C57C6005FF116 /* GiftGlobalView.m */; };
-		A61E75EE1D5C57D0005FF116 /* GiftGlobalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61E75ED1D5C57D0005FF116 /* GiftGlobalView.xib */; };
 		A61E75F11D5C5D0C005FF116 /* GiftAnimView.m in Sources */ = {isa = PBXBuildFile; fileRef = A61E75F01D5C5D0C005FF116 /* GiftAnimView.m */; };
 		A61E75F31D5C5D14005FF116 /* GiftAnimView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61E75F21D5C5D14005FF116 /* GiftAnimView.xib */; };
 		A61E75F51D5C6F2F005FF116 /* upgrade_top.png in Resources */ = {isa = PBXBuildFile; fileRef = A61E75F41D5C6F2F005FF116 /* upgrade_top.png */; };
@@ -146,9 +144,6 @@
 		A61E75DF1D5C548D005FF116 /* lateral_rocket_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lateral_rocket_2.png; sourceTree = "<group>"; };
 		A61E75E01D5C548D005FF116 /* lateral_rocket_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lateral_rocket_3.png; sourceTree = "<group>"; };
 		A61E75E11D5C548D005FF116 /* lateral_rocket_bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lateral_rocket_bk.png; sourceTree = "<group>"; };
-		A61E75EA1D5C57C6005FF116 /* GiftGlobalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftGlobalView.h; sourceTree = "<group>"; };
-		A61E75EB1D5C57C6005FF116 /* GiftGlobalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftGlobalView.m; sourceTree = "<group>"; };
-		A61E75ED1D5C57D0005FF116 /* GiftGlobalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftGlobalView.xib; sourceTree = "<group>"; };
 		A61E75EF1D5C5D0C005FF116 /* GiftAnimView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftAnimView.h; sourceTree = "<group>"; };
 		A61E75F01D5C5D0C005FF116 /* GiftAnimView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftAnimView.m; sourceTree = "<group>"; };
 		A61E75F21D5C5D14005FF116 /* GiftAnimView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftAnimView.xib; sourceTree = "<group>"; };
@@ -296,9 +291,6 @@
 				A61E75B51D5B4276005FF116 /* RocketView.h */,
 				A61E75B61D5B4276005FF116 /* RocketView.m */,
 				A61E75B71D5B4276005FF116 /* RocketView.xib */,
-				A61E75EA1D5C57C6005FF116 /* GiftGlobalView.h */,
-				A61E75EB1D5C57C6005FF116 /* GiftGlobalView.m */,
-				A61E75ED1D5C57D0005FF116 /* GiftGlobalView.xib */,
 				A61E75EF1D5C5D0C005FF116 /* GiftAnimView.h */,
 				A61E75F01D5C5D0C005FF116 /* GiftAnimView.m */,
 				A61E75F21D5C5D14005FF116 /* GiftAnimView.xib */,
@@ -469,7 +461,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A61E75E71D5C548D005FF116 /* lateral_rocket_2.png in Resources */,
-				A61E75EE1D5C57D0005FF116 /* GiftGlobalView.xib in Resources */,
 				A61E75E51D5C548D005FF116 /* lateral_aircraft_bk.png in Resources */,
 				A61E75F31D5C5D14005FF116 /* GiftAnimView.xib in Resources */,
 				A61E75C41D5B4276005FF116 /* RocketView.xib in Resources */,
@@ -643,7 +634,6 @@
 			files = (
 				A61E75211D5878F6005FF116 /* ViewController.m in Sources */,
 				A61E756E1D5891EA005FF116 /* YYFrameImage.m in Sources */,
-				A61E75EC1D5C57C6005FF116 /* GiftGlobalView.m in Sources */,
 				A61E751E1D5878F6005FF116 /* AppDelegate.m in Sources */,
 				A61E75D81D5C2B01005FF116 /* AnimOperation.m in Sources */,
 				A61E75841D5979B6005FF116 /* UIView+Tool.m in Sources */,

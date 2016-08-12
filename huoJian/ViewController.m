@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "AnimOperationManager.h"
 #import "UIView+Tool.h"
-#import "GiftGlobalView.h"
 
 #import "DanMuModel.h"
 
@@ -28,28 +27,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    DanMuModel *danMuModel = [[DanMuModel alloc]init];
-//    danMuModel.user_nick = @"小明明明明明明明";
-//    danMuModel.target_nick = @"小红红红红红红红红";
-//    danMuModel.repeat = [NSNumber numberWithInteger:10];
-//    danMuModel.isOwnRoom = YES;
-//    danMuModel.room_id = [NSNumber numberWithInteger:244394];
-//    danMuModel.prop_id = @"6";  //火箭6   飞机7
-//    
-//    GiftGlobalView *giftGlobalView = [[[NSBundle mainBundle]loadNibNamed:@"GiftGlobalView" owner:nil options:nil]lastObject];
-//    
-//    giftGlobalView.frame = self.view.frame;
-//    
-//    giftGlobalView.danMuModel = danMuModel;
-//    
-//    giftGlobalView.top = 400;
-//    
-//    [self.view addSubview:giftGlobalView];
-//
-//    [giftGlobalView startAnimationToCompletion:^{
-//        NSLog(@"动画完成、啊实打实");
-//    }];
 }
 
 - (IBAction)pophuojianaaa:(UIButton *)sender {
