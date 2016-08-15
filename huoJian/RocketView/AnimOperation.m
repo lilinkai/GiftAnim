@@ -25,14 +25,14 @@
 @synthesize finished = _finished;
 @synthesize executing = _executing;
 
-+ (instancetype)animOperation{
++ (instancetype)animOperation:(getRewards)getRewards{
     
     AnimOperation *op = [[AnimOperation alloc] init];
     
     op.rocketView = [[[NSBundle mainBundle]loadNibNamed:@"RocketView" owner:nil options:nil]lastObject];
     op.rocketView.frame = op.animContentView.frame;
     op.rocketView.height = 0;
-    
+    op.getRewards = getRewards;
     op.giftAnimView = [[[NSBundle mainBundle]loadNibNamed:@"GiftAnimView" owner:nil options:nil]lastObject];
     op.giftAnimView.frame = CGRectMake(0, 0, KKWidth, op.giftAnimView.height);
     
@@ -69,7 +69,7 @@
             AnimOperationManager *animOperationManager = [AnimOperationManager sharedManager];
             
             AnimOperation *animOp = [animOperationManager.globalGiftAnimArray firstObject];
-            
+           
             if (animOp.giftAnimView.frame.origin.y == (KKHeight-self.giftAnimView.height)/2) {
                 NSLog(@"数组最后一个在上面了");
                 self.giftAnimView.top = (KKHeight-animOp.giftAnimView.height)/2+self.giftAnimView.height;
@@ -79,11 +79,15 @@
             }
             
             [self.animContentView addSubview:self.giftAnimView];
+            
             self.giftAnimView.danMuModel = self.danMuModel;
+            
             [self.giftAnimView startAnimationToCompletion:^{
                 self.finished = YES;
                 [self.giftAnimView removeFromSuperview];
                 [animOperationManager.globalGiftAnimArray removeObject:self];
+            } getRewards:^(NSString *roomId) {
+                self.getRewards(roomId);
             }];
         }];
     }else{

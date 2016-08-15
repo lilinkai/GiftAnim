@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 #import "DanMuModel.h"
 
+typedef void(^getRewards)(NSString *roomId);
+
 @interface AnimOperationManager : NSObject
 
 @property (nonatomic,strong) UIView *animContentView;   //需要显示动画的view（一定要指定）
@@ -23,6 +25,6 @@
 - (void)addRocketVerticalAnim;
 
 //添加全站横着飞的动画
-- (void)addGlobalGiftAnim;
+- (void)addGlobalGiftAnim:(getRewards)getRewards;
 
 @end

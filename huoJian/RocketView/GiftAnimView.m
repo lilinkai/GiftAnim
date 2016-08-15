@@ -19,6 +19,9 @@
 @property (strong, nonatomic) IBOutlet YYAnimatedImageView *iconImageView;
 @property (strong, nonatomic) IBOutlet UIImageView *bgImageView;
 @property (strong, nonatomic) IBOutlet UILabel *contentLabel;
+@property (strong, nonatomic)UITapGestureRecognizer *tapGesture;
+@property (strong, nonatomic) IBOutlet UIButton *getButton;
+@property (strong, nonatomic) IBOutlet UIButton *bigButton;
 
 @end
 
@@ -27,6 +30,10 @@
 
 - (void)awakeFromNib{
     [super awakeFromNib];
+
+    [self.getButton addTarget:self action:@selector(getRewardsButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.bigButton addTarget:self action:@selector(getRewardsButtonAction) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)setDanMuModel:(DanMuModel *)danMuModel{
@@ -81,11 +88,22 @@
     
     self.contentLabel.width = contentLabelSize.width;
     self.bgImageView.width = self.contentLabel.width + 55;
+    
+    if (self.danMuModel.isOwnRoom) {
+        self.getButton.hidden = YES;
+    }else{
+        self.getButton.hidden = NO;
+        self.getButton.left = self.contentLabel.left+self.contentLabel.width;
+        self.bgImageView.width = self.contentLabel.width + 55 + self.getButton.width;
+    }
+    
+    self.width = KKWidth;
 }
 
-- (void)startAnimationToCompletion:(animatedComplete)completion{
+- (void)startAnimationToCompletion:(animatedComplete)completion getRewards:(getRewards)getRewards{
     
     _animatedComplete = completion;
+    _getRewards = getRewards;
     
     /**
      *  火箭动画添加
@@ -99,6 +117,10 @@
                                         [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]
                                         ]
                               addView:self];
+}
+
+- (void)getRewardsButtonAction{
+   _getRewards([self.danMuModel.room_id stringValue]);
 }
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{

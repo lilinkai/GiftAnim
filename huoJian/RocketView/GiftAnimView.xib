@@ -7,8 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GiftAnimView">
-            <rect key="frame" x="0.0" y="0.0" width="302" height="32"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="GiftAnimView">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="32"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lateral_aircraft_bk.png" id="Nuv-h1-LKR">
@@ -26,16 +26,31 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tfz-xW-HpB">
+                    <rect key="frame" x="290" y="1" width="70" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title=" 点击领宝箱">
+                        <color key="titleColor" red="0.85098039219999999" green="0.83545901302982795" blue="0.22590214188920926" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nDM-yS-85I">
+                    <rect key="frame" x="0.0" y="0.0" width="405" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bgImageView" destination="Nuv-h1-LKR" id="S4K-Zc-lF6"/>
+                <outlet property="bigButton" destination="nDM-yS-85I" id="5du-SK-DMN"/>
                 <outlet property="contentLabel" destination="Mgf-Yb-Yrf" id="1rD-UZ-ePT"/>
+                <outlet property="getButton" destination="Tfz-xW-HpB" id="yw6-RG-0xv"/>
                 <outlet property="iconImageView" destination="r5O-7n-XyE" id="hfa-84-2ci"/>
             </connections>
-            <point key="canvasLocation" x="357" y="295"/>
+            <point key="canvasLocation" x="173.5" y="254"/>
         </view>
     </objects>
     <resources>

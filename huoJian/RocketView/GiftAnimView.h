@@ -12,13 +12,15 @@
 #import "DanMuModel.h"
 
 typedef void(^animatedComplete)();
+typedef void(^getRewards)(NSString *roomId);
 
 @interface GiftAnimView : UIView{
     animatedComplete _animatedComplete;
+    getRewards _getRewards;
 }
 
 @property (strong, nonatomic)DanMuModel *danMuModel;   //火箭、飞机礼物model
 
-- (void)startAnimationToCompletion:(animatedComplete)completion;
+- (void)startAnimationToCompletion:(animatedComplete)completion getRewards:(getRewards)getRewards;
 
 @end

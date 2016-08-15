@@ -40,6 +40,7 @@
 }
 
 - (IBAction)addHHuoJian:(id)sender {
+    //添加火箭动画
     AnimOperationManager *manager = [AnimOperationManager sharedManager];
     manager.animContentView = self.view;
     
@@ -57,20 +58,12 @@
 }
 
 - (IBAction)addHFeiJi:(id)sender {
-    AnimOperationManager *manager = [AnimOperationManager sharedManager];
-    manager.animContentView = self.view;
-    
-    DanMuModel *danMuModel = [[DanMuModel alloc]init];
-    danMuModel.user_nick = @"小明明明明明明明";
-    danMuModel.target_nick = @"小红红红红红红红红";
-    danMuModel.repeat = [NSNumber numberWithInteger:10];
-    danMuModel.isOwnRoom = YES;
-    danMuModel.room_id = [NSNumber numberWithInteger:244394];
-    danMuModel.prop_id = @"7";  //火箭6   飞机7
-    
-    manager.danMuModel = danMuModel;
-    
-    [manager addGlobalGiftAnim];
+//    //添加飞机动画
+//    AnimOperationManager *manager = [AnimOperationManager sharedManager];
+//    manager.animContentView = self.view;
+//    manager.danMuModel = danMuModel;
+//    
+//    [manager addGlobalGiftAnim];
 }
 
 

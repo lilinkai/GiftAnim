@@ -10,15 +10,17 @@
 #import "RocketView.h"
 #import "GiftAnimView.h"
 
+typedef void(^getRewards)(NSString *roomId);
+
 @interface AnimOperation : NSOperation
 
 @property (nonatomic,strong) UIView *animContentView;   //需要显示动画的view（一定要指定）
 
 @property (nonatomic,strong) RocketView *rocketView;
 @property (nonatomic, strong)GiftAnimView *giftAnimView;
-
+@property (nonatomic, copy)getRewards getRewards;
 @property (strong, nonatomic)DanMuModel *danMuModel;   //火箭、飞机礼物model
 
-+ (instancetype)animOperation;
++ (instancetype)animOperation:(getRewards)getRewards;
 
 @end

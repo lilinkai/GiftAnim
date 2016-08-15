@@ -55,7 +55,9 @@
  *  添加到火箭竖着飞的动画
  */
 - (void)addRocketVerticalAnim{
-    AnimOperation *op = [AnimOperation animOperation];
+    AnimOperation *op = [AnimOperation animOperation:^(NSString *roomId) {
+        
+    }];
     op.animContentView = self.animContentView;
     [self.rocketVerticalQueue addOperation:op];
 }
@@ -63,8 +65,12 @@
 /**
  *  添加全站横着飞的动画
  */
-- (void)addGlobalGiftAnim{
-    AnimOperation *op = [AnimOperation animOperation];
+- (void)addGlobalGiftAnim:(getRewards)getRewards{
+    AnimOperation *op = [AnimOperation animOperation:^(NSString *roomId) {
+        if (getRewards) {
+            getRewards(roomId);
+        }
+    }];
     op.animContentView = self.animContentView;
     op.danMuModel = self.danMuModel;
     [self.globalGiftQueue addOperation:op];
