@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   pop:
-    :commit: b30efd828111e4dfd1651635c8586f859d1fd3c2
+    :commit: 14098ea9c49893bffeb02d74dc7fdad0ccf19949
     :git: https://github.com/facebook/pop.git
 
 SPEC CHECKSUMS:
@@ -18,4 +18,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 33b770a4646fdf9e99201c496836d2b6887e3a9f
 
-COCOAPODS: 1.0.0.beta.5
+COCOAPODS: 1.0.0

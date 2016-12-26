@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define GiftWidth [[UIScreen mainScreen]bounds].size.width
+#define GiftHeight [[UIScreen mainScreen]bounds].size.height
+
 @interface UIView (Tool)
 
 @property (nonatomic) CGFloat left;
